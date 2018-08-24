@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToWidth="true" minHeight="-Infinity" minWidth="-Infinity" prefHeight="868.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewInstructorController">
+  <content>
+    <AnchorPane id="contentLabel" minHeight="0.0" minWidth="0.0" prefHeight="867.0" prefWidth="606.0">
+         <children>
+            <VBox layoutX="27.0" layoutY="110.0" prefHeight="437.0" prefWidth="193.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="186.0" style="-fx-font-weight: bold;" styleClass="labelClass" text="Full Name" />
+                  <Label prefHeight="175.0" prefWidth="179.0" style="-fx-font-weight: bold;" text="Address">
+                     <VBox.margin>
+                        <Insets bottom="110.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="37.0" prefWidth="189.0" style="-fx-font-weight: bold;" text="Contact Number(Home)" />
+                  <Label prefHeight="37.0" prefWidth="192.0" style="-fx-font-weight: bold;" text="Contact Number(Mobile)">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="37.0" prefWidth="185.0" style="-fx-font-weight: bold;" text="Email address" />
+                  <Label prefHeight="37.0" prefWidth="184.0" style="-fx-font-weight: bold;" text="Gender">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="37.0" prefWidth="183.0" style="-fx-font-weight: bold;" text="Date of Birth" />
+                  <Label prefHeight="198.0" prefWidth="179.0" style="-fx-font-weight: bold;" text="NIC number" />
+               </children>
+            </VBox>
+            <VBox layoutX="239.0" layoutY="110.0" prefHeight="471.0" prefWidth="350.0">
+               <children>
+                  <Label fx:id="showNameLabel" prefHeight="37.0" prefWidth="347.0" />
+                  <Label fx:id="showAddressLabel" maxWidth="437.0" prefHeight="135.0" prefWidth="350.0" wrapText="true" />
+                  <Label fx:id="showContactHomeLabel" maxWidth="437.0" prefHeight="49.0" prefWidth="230.0" />
+                  <Label fx:id="showContactMobileLabel" maxWidth="437.0" prefHeight="42.0" prefWidth="196.0" />
+                  <Label fx:id="showEmailLabel" maxWidth="437.0" prefHeight="42.0" prefWidth="209.0" />
+                  <Label fx:id="showGenderLabel" maxWidth="437.0" prefHeight="42.0" prefWidth="197.0" />
+                  <Label fx:id="showDOBLabel" maxWidth="437.0" prefHeight="42.0" prefWidth="201.0" />
+                  <Label fx:id="showNICLabel" maxWidth="437.0" prefHeight="42.0" prefWidth="196.0" />
+               </children>
+            </VBox>
+            <Label layoutX="45.0" layoutY="29.0" text="Instructor ID" />
+            <TextField fx:id="InstructorID" layoutX="144.0" layoutY="36.0" prefHeight="25.0" prefWidth="152.0" />
+            <VBox layoutX="28.0" layoutY="891.0" />
+            <VBox layoutX="239.0" layoutY="891.0" />
+            <Label layoutX="28.0" layoutY="563.0" text="Undergraduate Studies" />
+            <Label layoutX="24.0" layoutY="607.0" style="-fx-font-weight: bold;" text="Name of Degree Obtained" />
+            <Label layoutX="25.0" layoutY="660.0" prefHeight="37.0" prefWidth="226.0" style="-fx-font-weight: bold;" text="Degree Providing Institute" />
+            <Label layoutX="24.0" layoutY="709.0" prefHeight="37.0" prefWidth="216.0" style="-fx-font-weight: bold;" text="Year of Completion" />
+            <Label id="alertLabel" fx:id="InstructorIDLbl" layoutX="42.0" layoutY="66.0" prefHeight="37.0" prefWidth="230.0" />
+            <Button fx:id="searchBtn" layoutX="368.0" layoutY="36.0" mnemonicParsing="false" onAction="#search" prefHeight="37.0" prefWidth="113.0" text="Search" />
+            <VBox layoutX="237.0" layoutY="705.0" prefHeight="37.0" prefWidth="137.0">
+               <children>
+                  <Label fx:id="showYearLabel" />
+               </children>
+            </VBox>
+            <Label fx:id="showDegreeNameLabel" layoutX="240.0" layoutY="607.0" />
+            <Label fx:id="showInstituteLabel" layoutX="240.0" layoutY="660.0" />
+            <Label layoutX="24.0" layoutY="765.0" prefHeight="37.0" prefWidth="177.0" style="-fx-font-weight: bold;" text="Salary" />
+            <VBox layoutX="238.0" layoutY="765.0" prefHeight="37.0" prefWidth="137.0">
+               <children>
+                  <Label fx:id="showSalaryLabel" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </AnchorPane>
+  </content>
+</ScrollPane>
